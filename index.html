@@ -19,8 +19,20 @@
     />
   </head>
   <body>
-    <header>
-      <div class="header-info">
+    <div class="navbar">
+      <nav>
+        <h1><span class="logo">Life</span> Hacks</h1>
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#Thinks">Think</a></li>
+          <li><a href="#failures">Years</a></li>
+          <li><a href="#Plan">Plans</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <header id="Home">
+      <div class="header-info" id="Thinks">
         <h1 class="heading">
           All Thinks Are <br />
           Possible If You <br />
@@ -32,7 +44,12 @@
           form, by injected humour, or randomised words</small
         >
         <br />
-        <button class="btn-contact">Contact Us</button>
+
+        <a href="#Contact" style="color: white; text-decoration: none">
+          <button class="btn-contact">
+            <h3>Contact Us</h3>
+          </button>
+        </a>
       </div>
     </header>
     <main>
@@ -45,13 +62,13 @@
             alt="a confused girl with brown hair"
           />
         </div>
-        <div>
+        <div id="failures">
           <h2>
             My failures of <br />
             previous year
           </h2>
           <small style="color: #444343">
-            <div class="div-middle">
+            <div style="padding: 25px 0 20px 0">
               Contrary to popular belief, Lorem Ipsum is not <br />
               simply random text. It has roots in a piece of <br />
               classical Latin literature from 45 BC, making it over <br />
@@ -68,30 +85,81 @@
           </small>
         </div>
       </div>
-      <h2 style="text-align: center">My Plans</h2>
-      <div class="parent-div">
-        <div>
+      <h2 style="text-align: center" id="Plan">My Plans</h2>
+      <div class="plans">
+        <div class="plane">
           <img src="images/icons/web.png" alt="" />
           <h3>Web Development</h3>
           <small>I want to start</small>
         </div>
-        <div>
-          <img src="images/icons/web.png" alt="" />
-          <h3>Web Development</h3>
-          <small>I want to start</small>
+        <div class="plane">
+          <img src="images/icons/js.png" alt="" />
+          <h3>Javascript</h3>
+          <small>I want to learn</small>
         </div>
-        <div>
-          <img src="images/icons/web.png" alt="" />
-          <h3>Web Development</h3>
-          <small>I want to start</small>
+        <div class="plane">
+          <img src="images/icons/smoke.png" alt="" />
+          <h3>Smoking Habit</h3>
+          <small>I want to end</small>
         </div>
-        <div>
-          <img src="images/icons/web.png" alt="" />
-          <h3>Web Development</h3>
-          <small>I want to start</small>
+        <div class="plane">
+          <img src="images/icons/ecom.png" alt="" />
+          <h3>ecommerce</h3>
+          <small>I want to develop</small>
         </div>
       </div>
+      <div class="positive">
+        <h2>
+          Awlays keep a positive <br />
+          mindset
+        </h2>
+        <button class="btn-call">Call Now</button>
+      </div>
     </main>
-    <footer></footer>
+
+    <section id="Contact">
+      <h1>Contact Us</h1>
+      <input type="text" placeholder="Name" />
+      <input type="text" placeholder="Email Address" />
+      <textarea placeholder="Your Message" rows="8"></textarea>
+      <button>Message Now</button>
+    </section>
+
+    <footer>
+      <div class="footer">
+        <div>
+          <h1>Future</h1>
+          <small>
+            There are many variations of passages of Lorem Ipsum <br />
+            available, but the majority have suffered alteration in some <br />
+            form, by injected humour, or randomised words
+            <br />
+            <br />
+            Email : info@gmail.com
+            <br />
+            Phone : 01000000010
+          </small>
+          <div style="padding-top: 30px">
+            <img src="images/icons/fb.png" alt="facebook icon" />
+            <img src="images/icons/twitter.png" alt="" />
+            <img src="images/icons/youtube.png" alt="" />
+          </div>
+        </div>
+        <div>
+          <label for="email">Subscribe</label>
+          <br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+          />
+          <br />
+
+          <button class="btn-subscribe">Subscribe</button>
+        </div>
+      </div>
+      <small class="courtesy">Copyright 2023</small>
+    </footer>
   </body>
 </html>
