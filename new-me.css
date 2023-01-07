@@ -103,6 +103,7 @@ li {
 }
 .parent-div li:before {
   content: "✓";
+  color: #f15b22;
 }
 
 /* styling planes */
